@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive landing page with a siple registration form designed with JavaScript.">
+    <title>Project 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <section id="intro" class="intro">
+        <!-- The navigation bar-->
+        <header class="main">
+            <h2 class="logo">Hey there!</h2>
+            <ul id="navBar" class="nav-bar reset-list">
+                <li>Portfolio</li>
+                <li>Hire me</li>
+                <li>About</li>
+                <li><button class="sign-up-btn" onclick="getRegisterForm()"><a href="#intro">Sign Up</a></button></li>
+            </ul>
+            <!-- The burger menu and the task bar appears only on small screens -->
+            <div id="slide" class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="task-bar reset-list">
+                <li><i class="fa fa-commenting fa-fw fa-2x"></i></li>
+                <li><i class="fa fa-cogs fa-fw fa-2x"></i></li>
+                <li><i class="fa fa-globe fa-fw fa-2x"></i></li>
+                <li><i class="fa fa-code fa-fw fa-2x"></i></li>
+            </ul>
+        </header>
+        <main class="row">
+            <div class="col title">
+                <span>I produce</span>
+                <h1>CREATIVITY</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id nisi aliquam tempore ea dolores maiores, consequuntur officia voluptate beatae sapiente?</p>
+                <button>Learn More</button>
+            </div>
+            <div class="col">
+                <div id="form" class="form">
+                    <div class="btn-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="getLoginForm()">Login</button>
+                        <button type="button" class="toggle-btn" onclick="getRegisterForm()">Register</button>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-google-plus fa-fw fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-github fa-fw fa-2x"></i></a>
+                        <a href="#"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+                    </div>
+                    <form id="login" class="input-group">
+                        <input type="text" class="input-field" placeholder="username" required>
+                        <input type="password" class="input-field" placeholder="Passsword" required>
+                        <input type="checkbox" class="check-box"><span>Remember password</span>
+                        <button type="submit" class="submit-btn">Login</button>
+
+                    </form>
+                    <form id="register" class="input-group">
+                        <input type="text" class="input-field" placeholder="username" required>
+                        <input type="email" class="input-field" placeholder="email" required>
+                        <input type="password" class="input-field" placeholder="Passsword" required>
+                        <input type="checkbox" class="check-box"><span>I accept terms and conditions.</span>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </main> 
+        <div class="svg-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#e2b0e7" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,144C384,149,480,171,576,197.3C672,224,768,256,864,266.7C960,277,1056,267,1152,272C1248,277,1344,299,1392,309.3L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>      
+    </section>
+    <section class="langs">
+        <h2>Plans</h2>
+        <div class="inner">
+            <div class="lang">
+                <i class="fa fa-html5 fa-fw fa-5x"></i>
+                <h3>Tutorial</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, sequi! Quis mollitia optio voluptatum! Mollitia.</p>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blanck" title="This link will redirect you to W3schools Website to get start with it.">Get started</a>
+                <span class="price">10 &dollar;</span>
+            </div>
+            <div class="lang">
+                <i class="fa fa-css3 fa-fw fa-5x"></i>
+                <h3>Advanced</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis similique voluptas vero quo rem ducimus.</p>
+                <a href="https://www.w3schools.com/css/default.asp" target="_blanck" title="This link will redirect you to W3schools Website to get start with it.">Get started</a>
+                <span class="price">20 &dollar;</span>
+            </div>
+            <div class="lang">
+                <i class="fa fa-codepen fa-fw fa-5x"></i>
+                <h3>Pro</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ipsa iure ullam sapiente fuga quam.</p>
+                <a href="https://www.w3schools.com/js/default.asp" target="_blanck" title="This link will redirect you to W3schools Website to get start with it.">Get started</a>
+                <span class="price">45 &dollar;</span>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="svg-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#e2b0e7" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,144C384,149,480,171,576,197.3C672,224,768,256,864,266.7C960,277,1056,267,1152,272C1248,277,1344,299,1392,309.3L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        </div>
+        <h2>See my Work</h2>
+        <div class="my-work">
+            <div class="wrapper">
+                <img src="images/pic-01.jpg" alt="project">
+                <div class="upper-layer">
+                    <a href="https://men3em-web.github.io/templates-from-psd/" target="_blanck">See Full Template</a>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="images/pic-02.jpg" alt="project">
+                <div class="upper-layer">
+                    <a href="https://men3em-web.github.io/Responsive-template-v.2.1/" target="_blanck">See Full Template</a>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="" alt="this project is under progress">
+                <div class="upper-layer">
+                    <a href="#" target="_blanck">In progress</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="graphic container">
+        <div class="font">
+            <h2>Fonts</h2>
+            <h3>'Poppins'</h3>
+            <p style="text-transform: uppercase;">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+            <p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+        </div>
+        <div class="colors-container">
+            <h2>Colors</h2>
+            <span class="color" style = "background-color: #a712b4; z-index: 6;"><span class="color-code">#a712b4</span></span>
+            <span class="color" style = "background-color: #db8ae2; z-index: 5;"><span class="color-code">#db8ae2</span></span>
+            <span class="color" style = "background-color: #ecbce9; z-index: 4;"><span class="color-code">#ecbce9</span></span>
+            <span class="color" style = "background-color: #e67e22; z-index: 3;"><span class="color-code">#e67e22</span></span>
+            <span class="color" style = "background-color: #c0392b; z-index: 2;"><span class="color-code">#c0392b</span></span>
+            <span class="color" style = "background-color: #91054b; z-index: 1;"><span class="color-code">#91054b</span></span>
+        </div>
+        <div class="tools">
+            <h2>tools</h2>
+            <img src="images/vsc.png" class="vs-logo" alt="vs code">
+        </div>
+    </section>
+    <script src="js/javaScript.js"></script>
+</body>
+</html>
